@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <script src="/JS/jquery-3.6.0.min.js"></script>
+    <script src="JS/mon_js.js"></script>
+
+</head>
+<body>
+    
+    <section class="container">
+        <Section>    
+            <div> <!--Nom de mon container central-->        
+                <header class="TitreH"> <!--Class de mon header-->
+                    <h2 class="TitreH-Texte">
+                     TP-jQuery
+                    </h2>
+                        <hr>
+                    <h3>
+                    <p>
+                        Merci de remplir ce formulaire de contact
+                    </p>
+                    </h3>
+                    <hr>
+                </header>
+            </div>  
+            <section class="container1">
+                <div class="messageOK">
+                    
+                </div>
+                <div class="formulaireOK">
+                    <img src="/PICS/mail_envoye.png" alt="imageenvoyé.jpg" >
+                </div>
+                <form action="" method="post" class="formulaire">
+                    <div class="c_nom">
+                        <label  for="nom" >NOM (3 à 15 caractères):</label>
+                        <input type="text" id="nom" placeholder="Entrez votre nom" required minlength="3" maxlength="15">                        
+                    </div>
+                    <div class="msg_err_nom">
+
+                    </div>
+                    <br>
+                    <div class="c_prenom">
+                        <label  for="prenom" >Prénom:</label>
+                        <input type="text" id="prenom" placeholder="Entrez votre prénom" required>
+                    </div>
+                    <div class="msg_err_prenom">
+
+                    </div>
+                    <br>
+                    <div class="c_email">
+                            <label for="email" ><span>Email:&nbsp;</span></label>
+                        <input type="email" id="email" placeholder="Entrez votre email" required>
+                    </div>
+                    <div class="msg_err_mail">
+
+                    </div>
+                    <br>
+                    <div class="c_phone">
+                    <label for="number" >Téléphone: </label>
+                    <input type="tel" id="tel" placeholder="Entrez votre numéro" minlength="10" required>
+                    </div>
+                    <div class="msg_err_tel">
+
+                    </div>
+                    <br>
+                    <br>
+                    <div class="comment">
+                        <textarea name="commentaires" id="message" cols="45" rows="7" ></textarea>
+        
+                    </div>
+                    <div class="feedback">
+                       0 Mot(s) / 0 characters / 200 mots
+                    </div>
+                    <br>
+                    <div class="btn" action="#" >
+                        <!--<a href="https://www.afpa.fr/">-->
+                        <button class="soumettre"  value="Envoyer">Envoyer</button>
+                        <!--</a>-->
+                        <input class="annuler" type="reset" value="Annuler" onclick=refresh()>
+                    </div>
+                    <div class="user_msg">
+
+                    </div>                    
+                </form>
+
+            </section>
+    </section>
+</body>
+</html>

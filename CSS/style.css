@@ -1,0 +1,21 @@
+.erreur{
+    background: red;
+}
+.btn{
+    display: flex;
+    flex-wrap: nowrap;
+}
+button{
+    width: 10%;
+    background-color: blue;
+    color: azure;
+    font-weight: bold;
+    margin-right: 1%;
+}
+.annuler{
+    background: red;
+    color: azure;
+    font-weight: bold;
+    margin-left: 1%;
+
+}
